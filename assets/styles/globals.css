@@ -20,6 +20,7 @@ body {
     background-color: #00162b;
     padding: 20px;
     color: #f8f8f8;
+    margin: auto;
 }
 
 .container {
@@ -81,4 +82,11 @@ header {
     );
     opacity: 0.6;
     filter: blur(8px);
+}
+
+.drivers {
+    display: flex;
+    gap: 128px;
+    justify-content: center;
+    margin-top: 28px;
 }
