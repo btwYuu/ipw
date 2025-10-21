@@ -45,7 +45,7 @@ header {
     font-size: 18px;
 }
 
-.nav-buttons {
+.navbar {
     display: flex;
     gap: 24px;
     border-radius: 32px;
@@ -82,11 +82,4 @@ header {
     );
     opacity: 0.6;
     filter: blur(8px);
-}
-
-.drivers {
-    display: flex;
-    gap: 128px;
-    justify-content: center;
-    margin-top: 28px;
 }
