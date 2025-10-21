@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-body {
-    font-family: "Open Sans", sans-serif;
-}
-
-.driver-name {
-    font-family: "BBH Sans Bogle", sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +8,11 @@ body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif !important;
+    text-transform: capitalize;
+}
+
+body {
     background-color: #00162b;
     padding: 20px;
     color: #f8f8f8;
@@ -39,47 +35,57 @@ header {
 
 .logo {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 18px;
 }
 
 .navbar {
     display: flex;
-    gap: 24px;
     border-radius: 32px;
-    padding: 12px 36px;
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(14px) saturate(160%);
-    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     box-shadow:
-        0 8px 32px rgba(31, 38, 135, 0.12),
-        0 1.5px 5px rgba(0, 0, 0, 0.08);
-    border: 1.5px solid rgba(255, 255, 255, 0.21);
-    margin: auto;
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24),
+        inset 0 0.5px 0 rgba(255, 255, 255, 0.6);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-btn {
     color: #fff;
     text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 18px;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: 500;
 }
 
-.nav-btn::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 6px;
-    left: 16px;
-    width: 60%;
-    height: 25%;
-    pointer-events: none;
-    border-radius: 70px;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0.31),
-        rgba(255, 255, 255, 0.02)
-    );
-    opacity: 0.6;
-    filter: blur(8px);
+.nav-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    box-shadow:
+        0 2px 8px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.nav-btn:active {
+    transform: translateY(0px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
 }

@@ -4,23 +4,51 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Red Bull</title>
-        <link rel="stylesheet" href="assets/styles/globals.css" />
+        <link rel="stylesheet" href="./assets/styles/globals.css" />
+        <link rel="stylesheet" href="./assets/styles/home.css" />
     </head>
-    <body>
-        <div class="container">
-            <header>
-                <div class="logo">
+    <body class="container">
+        <header>
+            <div class="logo">
+                <a href="./">
                     <img
-                        src="assets/images/redbull.svg"
+                        src="./assets/images/redbull.svg"
                         alt="Red Bull Racing Logo"
+                        width="100"
+                        height="55"
                     />
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <a href="./sobre.html" class="nav-btn">Sobre Nós</a>
+                <a href="./contacto.html" class="nav-btn">Contacte-nos</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="news">
+              <h1>A Big Points Haul for the Team in Austin</h1>
+              <a href="https://www.redbullracing.com/int-en/united-states-grand-prix-2025-race-report" alt="Imagem Notícia">Ler Mais</a>
+            </section>
+
+            <section id="drivers" style="margin-top: 50px;">
+              <h2>Conheça os nossos pilotos</h2>
+              <span>
+                <div class="driver" style="background-image:url('./assets/images/max-verstappen.png'); background-position: center; background-size: 106%;">
+                  <h2 class="driver-name">Max Verstappen</h2>
+                  <h3 class="engineer-title">Race Engineer:</h3>
+                  <h4 class="engineer-name">GianPiero Lambiase</h4>
+                </div>
+               
+                <div class="driver" style="background-image:url('./assets/images/yuki-tsunoda.png'); background-position: center; background-size: 106%;">
+                  <h2 class="driver-name">Yuki Tsunoda</h2>
+                  <h3 class="engineer-title">Race Engineer:</h3>
+                  <h4 class="engineer-name">Ernesto Desiderio</h4>
                 </div>
 
-                <nav class="navbar">
-                    <a href="./sobre.html" class="nav-btn">Sobre Nós</a>
-                    <a href="./contacto.html" class="nav-btn">Contacte-nos</a>
-                </nav>
-            </header>
-        </div>
+              </span>
+            </section>
+        </main>
     </body>
 </html>
