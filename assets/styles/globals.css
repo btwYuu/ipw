@@ -81,11 +81,20 @@ header {
 }
 
 h1 {
-  font-weight: 800;
-  font-size: 50px;
+    font-weight: 800;
+    font-size: 50px;
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 40px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.footer_things span {
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
 }
