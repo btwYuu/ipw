@@ -89,3 +89,15 @@ h2 {
   font-weight: 700;
   font-size: 40px;
 }
+
+.footer_things span {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-decoration: none;
+}
