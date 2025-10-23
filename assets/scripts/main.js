@@ -40,3 +40,6 @@ else if (isHome)
                 <a href="./contacto.html" class="nav-btn">Contacte-nos</a>`;
 
 navbar.innerHTML = navbarHTML;
+
+const yearEl = (document.getElementById("year").textContent =
+  `${new Date().getFullYear()}`);

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/home.css" />
   </head>
   <script src="./assets/scripts/main.js" async></script>
+  <script src="./assets/scripts/home.js" async></script>
   <body class="container">
     <header>
       <div class="logo">
@@ -63,6 +64,37 @@
             <h4 class="engineer-name">Ernesto Desiderio</h4>
           </div>
         </span>
+      </section>
+
+      <section
+        id="events"
+        style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-gap: 12rem;"
+      >
+        <div class="standings">
+          <h2 style="margin-bottom: 1rem;"><span id="year"></span> Driver Standings</h2>
+          <table>
+            <tr>
+              <td>Max Verstappen</td>
+              <td id="max-points"></td>
+            </tr>
+            <tr>
+              <td>Yuki Tsunoda</td>
+              <td id="yuki-points"></td>
+            </tr>
+          </table>
+        </div><div class="aastandings">
+          <h3><span id="year"></span> Driver Standings</h3>
+          <table>
+            <tr>
+              <td>Max Verstappen</td>
+              <td id="max-points"></td>
+            </tr>
+            <tr>
+              <td>Yuki Tsunoda</td>
+              <td id="yuki-points"></td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
     <footer id="footer"></footer>

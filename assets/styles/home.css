@@ -78,6 +78,24 @@
   opacity: 0.85;
 }
 
+#events {
+  margin-top: 4rem;
+}
+
+.standings {
+  width: 50%;
+  background-color: #1A2E41;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+.aastandings {
+  width: 100%;
+  background-color: #1A2E41;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-right: 3.75rem; 
+}
+
 /* Tablets */
 @media (min-width: 600px) {
   #drivers .driver {
