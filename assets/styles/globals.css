@@ -22,7 +22,7 @@ body {
 .container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 header {
@@ -49,7 +49,7 @@ header {
         0 1px 2px rgba(0, 0, 0, 0.24),
         inset 0 0.5px 0 rgba(255, 255, 255, 0.6);
     border: 0.5px solid rgba(255, 255, 255, 0.3);
-    margin-top: -20px;
+    margin-top: -0.625rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -90,10 +90,9 @@ h2 {
     font-size: 40px;
 }
 
-.footer_things span {
-    display: inline-block;
-    padding-left: 1rem;
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -101,4 +100,14 @@ footer {
     justify-content: space-between;
     margin-top: 50px;
     text-decoration: none;
+}
+
+footer .links a {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+footer .links a:hover {
+  cursor: pointer;
+  color: #DB0A40;
 }

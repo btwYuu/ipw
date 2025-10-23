@@ -7,22 +7,22 @@
         <link rel="stylesheet" href="assets/styles/globals.css" />
         <link rel="stylesheet" href="assets/styles/sobre.css" />
     </head>
-    <body>
-        <div class="container">
+  <script src="./assets/scripts/main.js" async></script>
+    <body class="container">
             <header>
-                <div class="logo">
+              <div class="logo">
+                <a href="./">
                     <img
-                        src="assets/images/redbull.svg"
+                        src="./assets/images/redbull.svg"
                         alt="Red Bull Racing Logo"
+                        width="100"
+                        height="55"
                     />
-                </div>
+                </a>
+            </div>
 
-                <nav class="navbar">
-                    <a href="./index.html" class="nav-btn">Ínicio</a>
-                    <a href="./contacto.html" class="nav-btn">Contacto</a>
-                </nav>
+              <nav class="navbar" id="navbar"></nav>
             </header>
-        </div>
 
         <div class="redbull">
             <section class="story">
@@ -102,12 +102,6 @@
             </section>
         </div>
 
-        <footer>
-            <p>© 2025 Red Bull Racing Ltd</p>
-            <div class="footer_things">
-                <span><a href="../ipw/sobre.html">Sobre</a></span>
-                <span><a href="../ipw/contacto.html">Contacto</a></span>
-            </div>
-        </footer>
+        <footer id="footer"></footer>
     </body>
 </html>

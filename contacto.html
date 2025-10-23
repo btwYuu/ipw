@@ -7,22 +7,23 @@
         <link rel="stylesheet" href="assets/styles/globals.css" />
         <link rel="stylesheet" href="assets/styles/contacto.css" />
     </head>
-    <body>
-        <div class="container">
+    <script src="./assets/scripts/main.js" async></script>
+    <body class="container">
             <header>
-                <div class="logo">
+        <div class="logo">
+                <a href="./">
                     <img
-                        src="assets/images/redbull.svg"
+                        src="./assets/images/redbull.svg"
                         alt="Red Bull Racing Logo"
+                        width="100"
+                        height="55"
                     />
-                </div>
+                </a>
+            </div>
 
-                <nav class="navbar">
-                    <a href="./index.html" class="nav-btn">Ínicio </a>
-                    <a href="./sobre.html" class="nav-btn">Sobre</a>
-                </nav>
+
+                <nav class="navbar" id="navbar"></nav>
             </header>
-        </div>
 
         <form class="message-form">
             <input class="name" type="text" placeholder="Nome" />
@@ -31,12 +32,6 @@
             <button type="submit">Enviar</button>
         </form>
 
-        <footer>
-            <p>© 2025 Red Bull Racing Ltd</p>
-            <div class="footer_things">
-                <span><a href="../ipw/sobre.html">Sobre</a></span>
-                <span><a href="../ipw/contacto.html">Contacto</a></span>
-            </div>
-        </footer>
+        <footer id="footer"></footer>
     </body>
 </html>
