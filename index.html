@@ -9,21 +9,11 @@
   </head>
   <script src="./assets/scripts/main.js" async></script>
   <script src="./assets/scripts/home.js" async></script>
+  <script src="./assets/scripts/Header.js" type="text/javascript" defer></script>
+  <script src="./assets/scripts/Footer.js" type="text/javascript" defer></script>
   <body class="container">
-    <header>
-      <div class="logo">
-        <a href="./index.html">
-          <img
-            src="./assets/images/redbull.svg"
-            alt="Red Bull Racing Logo"
-            width="100"
-            height="55"
-          />
-        </a>
-      </div>
-
-      <nav id="navbar" class="navbar"></nav>
-    </header>
+    <rb-header>
+    </rb-header>
 
     <main>
       <section id="news">
@@ -68,10 +58,16 @@
 
       <section
         id="events"
-        style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-gap: 12rem;"
+        style="
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-gap: 12rem;
+        "
       >
         <div class="standings">
-          <h2 style="margin-bottom: 1rem;"><span id="year"></span> Driver Standings</h2>
+          <h2 style="margin-bottom: 1rem">
+            <span id="year"></span> Driver Standings
+          </h2>
           <table>
             <tr>
               <td>Max Verstappen</td>
@@ -82,7 +78,8 @@
               <td id="yuki-points"></td>
             </tr>
           </table>
-        </div><div class="aastandings">
+        </div>
+        <div class="aastandings">
           <h3><span id="year"></span> Driver Standings</h3>
           <table>
             <tr>
@@ -97,6 +94,6 @@
         </div>
       </section>
     </main>
-    <footer id="footer"></footer>
+    <rb-footer></rb-footer>
   </body>
 </html>

@@ -7,23 +7,10 @@
     <link rel="stylesheet" href="assets/styles/globals.css" />
     <link rel="stylesheet" href="assets/styles/sobre.css" />
   </head>
-  <script src="./assets/scripts/main.js" async></script>
+  <script src="./assets/scripts/Header.js" type="text/javascript" defer></script>
+  <script src="./assets/scripts/Footer.js" type="text/javascript" defer></script>
   <body class="container">
-    <header>
-      <div class="logo">
-        <a href="./index.html">
-          <img
-            src="./assets/images/redbull.svg"
-            alt="Red Bull Racing Logo"
-            width="100"
-            height="55"
-          />
-        </a>
-      </div>
-
-      <nav class="navbar" id="navbar"></nav>
-    </header>
-
+    <rb-header></rb-header>
     <div class="redbull">
       <section class="story">
         <h1>Oracle Red Bull Racing</h1>
@@ -100,6 +87,6 @@
       </section>
     </div>
 
-    <footer id="footer"></footer>
+    <rb-footer></rb-footer>
   </body>
 </html>
