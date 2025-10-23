@@ -1,113 +1,113 @@
 #news {
-    display: flex;
-    width: 100%;
-    height: 820px;
-    background-image: url("https://img.redbull.com/images/c_fill,g_auto,w_2200,h_1500/f_auto,q_auto/redbullcom/2025/10/20/velculovmeqqioqqk7xw/united-states-grand-prix-2025-race-report");
-    background-size: cover;
-    overflow: hidden;
-    border-radius: 30px;
-    justify-content: flex-end;
-    flex-flow: column wrap;
-    padding: 24px;
-    gap: 10px;
+  display: flex;
+  width: 100%;
+  height: 820px;
+  background-image: url("https://img.redbull.com/images/c_fill,g_auto,w_2200,h_1500/f_auto,q_auto/redbullcom/2025/10/20/velculovmeqqioqqk7xw/united-states-grand-prix-2025-race-report");
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 30px;
+  justify-content: flex-end;
+  flex-flow: column wrap;
+  padding: 24px;
+  gap: 10px;
 }
 
 #news a {
-    background-color: #db0a40;
-    width: 125px;
-    height: 50px;
-    border-radius: 9999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+  background-color: #db0a40;
+  width: 125px;
+  height: 50px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 #drivers *:not(h2) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 1rem;
 }
 
 #drivers .driver {
-    position: relative;
-    margin-top: 2%;
-    width: 90vw;
-    max-width: 392px;
-    height: 60vh;
-    max-height: 637px;
-    padding: 12px;
-    background-position: center;
-    background-size: 106%;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    color: white;
+  position: relative;
+  margin-top: 2%;
+  width: 90vw;
+  max-width: 392px;
+  height: 60vh;
+  max-height: 637px;
+  padding: 12px;
+  background-position: center;
+  background-size: 106%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  color: white;
 }
 
 #drivers .driver h2.driver-name,
 #drivers .driver h3.engineer-title,
 #drivers .driver h4.engineer-name {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  left: 0;
 }
 
 #drivers .driver h2.driver-name {
-    font-family: "BBH Sans Bogle", sans-serif;
-    bottom: 60px;
-    font-size: 1.5em;
+  font-family: "BBH Sans Bogle", sans-serif;
+  bottom: 60px;
+  font-size: 1.5em;
 }
 
 #drivers .driver h3.engineer-title {
-    bottom: 35px;
-    font-size: 1.1em;
-    font-weight: normal;
+  bottom: 35px;
+  font-size: 1.1em;
+  font-weight: normal;
 }
 
 #drivers .driver h4.engineer-name {
-    bottom: 15px;
-    font-size: 1em;
-    font-weight: lighter;
-    opacity: 0.85;
+  bottom: 15px;
+  font-size: 1em;
+  font-weight: lighter;
+  opacity: 0.85;
 }
 
 /* Tablets */
 @media (min-width: 600px) {
-    #drivers .driver {
-        width: 45vw;
-        height: 55vh;
-    }
-    #drivers .driver h2.driver-name {
-        font-size: 1.8em;
-    }
-    #drivers .driver h3.engineer-title {
-        font-size: 1.3em;
-    }
-    #drivers .driver h4.engineer-name {
-        font-size: 1.1em;
-    }
+  #drivers .driver {
+    width: 45vw;
+    height: 55vh;
+  }
+  #drivers .driver h2.driver-name {
+    font-size: 1.8em;
+  }
+  #drivers .driver h3.engineer-title {
+    font-size: 1.3em;
+  }
+  #drivers .driver h4.engineer-name {
+    font-size: 1.1em;
+  }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-    #drivers .driver {
-        width: 392px;
-        height: 637px;
-    }
-    #drivers .driver h2.driver-name {
-        font-size: 2em;
-    }
-    #drivers .driver h3.engineer-title {
-        font-size: 1.4em;
-    }
-    #drivers .driver h4.engineer-name {
-        font-size: 1.2em;
-    }
+  #drivers .driver {
+    width: 392px;
+    height: 637px;
+  }
+  #drivers .driver h2.driver-name {
+    font-size: 2em;
+  }
+  #drivers .driver h3.engineer-title {
+    font-size: 1.4em;
+  }
+  #drivers .driver h4.engineer-name {
+    font-size: 1.2em;
+  }
 }

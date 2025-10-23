@@ -1,37 +1,36 @@
 <!doctype html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Red Bull</title>
-        <link rel="stylesheet" href="assets/styles/globals.css" />
-        <link rel="stylesheet" href="assets/styles/contacto.css" />
-    </head>
-    <script src="./assets/scripts/main.js" async></script>
-    <body class="container">
-            <header>
-        <div class="logo">
-                <a href="./">
-                    <img
-                        src="./assets/images/redbull.svg"
-                        alt="Red Bull Racing Logo"
-                        width="100"
-                        height="55"
-                    />
-                </a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Bull</title>
+    <link rel="stylesheet" href="assets/styles/globals.css" />
+    <link rel="stylesheet" href="assets/styles/contacto.css" />
+  </head>
+  <script src="./assets/scripts/main.js" async></script>
+  <body class="container">
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img
+            src="./assets/images/redbull.svg"
+            alt="Red Bull Racing Logo"
+            width="100"
+            height="55"
+          />
+        </a>
+      </div>
 
+      <nav class="navbar" id="navbar"></nav>
+    </header>
 
-                <nav class="navbar" id="navbar"></nav>
-            </header>
+    <form class="message-form">
+      <input class="name" type="text" placeholder="Nome" />
+      <input class="email" type="email" placeholder="Email" />
+      <textarea class="mensagem" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
 
-        <form class="message-form">
-            <input class="name" type="text" placeholder="Nome" />
-            <input class="email" type="email" placeholder="Email" />
-            <textarea class="mensagem" placeholder="Mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-
-        <footer id="footer"></footer>
-    </body>
+    <footer id="footer"></footer>
+  </body>
 </html>

@@ -1,36 +1,36 @@
 .redbull {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .story,
 .mission,
 .values,
 .team_principal {
-    padding: 20px;
-    box-shadow: 0 4px 8px;
-    background-color: #0d2d4c;
-    border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px;
+  background-color: #0d2d4c;
+  border-radius: 20px;
 }
 
 .story,
 .mission,
 .values,
 .team_principal p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .team_principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .img_laurent {
-    width: 500px;
-    border-radius: 16px;
-    margin-top: 15px;
-    border-radius: 50px;
+  width: 500px;
+  border-radius: 16px;
+  margin-top: 15px;
+  border-radius: 50px;
 }

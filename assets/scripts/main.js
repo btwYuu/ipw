@@ -1,7 +1,7 @@
 const path = window.location.pathname;
-const isHome = path.includes('index.html') || path.endsWith('/');
-const isSobre = path.includes('sobre.html');
-const isContacto = path.includes('contacto.html');
+const isHome = path.includes("index.html") || path.endsWith("/");
+const isSobre = path.includes("sobre.html");
+const isContacto = path.includes("contacto.html");
 
 const footer = document.getElementById("footer");
 

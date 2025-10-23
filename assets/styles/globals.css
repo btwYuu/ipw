@@ -2,92 +2,92 @@
 @import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", sans-serif !important;
-    text-transform: capitalize;
+  font-family: "Open Sans", sans-serif !important;
+  text-transform: capitalize;
 }
 
 body {
-    background-color: #00162b;
-    padding: 20px;
-    color: #f8f8f8;
-    margin: auto;
+  background-color: #00162b;
+  padding: 20px;
+  color: #f8f8f8;
+  margin: auto;
 }
 
 .container {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 1.25rem;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 1.25rem;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .logo {
-    display: flex;
+  display: flex;
 }
 
 .navbar {
-    display: flex;
-    border-radius: 32px;
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24),
-        inset 0 0.5px 0 rgba(255, 255, 255, 0.6);
-    border: 0.5px solid rgba(255, 255, 255, 0.3);
-    margin-top: -0.625rem;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  border-radius: 32px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.6);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  margin-top: -0.625rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-btn {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 18px;
-    position: relative;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
-    font-size: 15px;
-    font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 18px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .nav-btn:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
-    box-shadow:
-        0 2px 8px rgba(255, 255, 255, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+  box-shadow:
+    0 2px 8px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .nav-btn:active {
-    transform: translateY(0px);
-    background: rgba(255, 255, 255, 0.15);
+  transform: translateY(0px);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 50px;
+  font-weight: 800;
+  font-size: 50px;
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 40px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 a {
@@ -96,18 +96,18 @@ a {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  text-decoration: none;
 }
 
 footer .links a {
-    display: inline-block;
-    padding-left: 1rem;
+  display: inline-block;
+  padding-left: 1rem;
 }
 
 footer .links a:hover {
   cursor: pointer;
-  color: #DB0A40;
+  color: #db0a40;
 }
