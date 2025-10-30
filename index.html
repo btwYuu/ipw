@@ -9,16 +9,8 @@
   </head>
   <script src="./assets/scripts/main.js" async></script>
   <script src="./assets/scripts/home.js" async></script>
-  <script
-    src="./assets/scripts/Header.js"
-    type="text/javascript"
-    defer
-  ></script>
-  <script
-    src="./assets/scripts/Footer.js"
-    type="text/javascript"
-    defer
-  ></script>
+  <script src="./components/Header.js" type="text/javascript" defer></script>
+  <script src="./components/Footer.js" type="text/javascript" defer></script>
   <body class="container">
     <rb-header> </rb-header>
     <main>
@@ -65,25 +57,46 @@
       <section
         id="events"
         style="
+          margin-top: 8rem;
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           grid-gap: 12rem;
+          margin-inline: 4.875rem;
         "
       >
         <div class="standings">
-          <h2 style="margin-bottom: 1rem">
+          <h2 style="margin-bottom: 1rem; text-transform: uppercase">
             <span id="year"></span> Driver Standings
           </h2>
-          <table>
+          <table class="divide-dotted">
             <tr>
-              <td>Max Verstappen</td>
-              <td id="max-points"></td>
+              <td class="driver-number">1</td>
+              <td class="driver-name-cell">Max Verstappen</td>
+              <td id="max-points" class="points-cell"></td>
             </tr>
             <tr>
-              <td>Yuki Tsunoda</td>
-              <td id="yuki-points"></td>
+              <td class="driver-number">22</td>
+              <td class="driver-name-cell">Yuki Tsunoda</td>
+              <td id="yuki-points" class="points-cell"></td>
             </tr>
           </table>
+        </div>
+        <div class="next-event">
+          <h2 style="margin-bottom: 1rem; text-transform: uppercase">
+            <span id="event-name"></span> Grand Prix
+          </h2>
+          <h3 id="countdown-event"></h3>
+        </div>
+      </section>
+
+      <section id="car-showcase">
+        <div class="car-container">
+          <img
+            src="./assets/images/rb21.png"
+            alt="Red Bull RB21"
+            class="car-image"
+          />
+          <h2 class="car-model">RB 21</h2>
         </div>
       </section>
     </main>
