@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Red Bull</title>
+        <title>Contacte-nos - Red Bull Racing</title>
         <link rel="stylesheet" href="assets/styles/globals.css" />
         <link rel="stylesheet" href="assets/styles/contacto.css" />
         <link rel="icon" href="./assets/images/favicon.png" />
@@ -13,12 +13,74 @@
     <body class="container">
         <rb-header></rb-header>
 
-        <form class="message-form">
-            <input class="name" type="text" placeholder="Nome" />
-            <input class="email" type="email" placeholder="Email" />
-            <textarea class="mensagem" placeholder="Mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <main class="contact-wrapper">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1>Entre em Contacto</h1>
+                </div>
+
+                <form class="message-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input
+                            id="name"
+                            class="form-input"
+                            type="text"
+                            placeholder="O seu nome"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            id="email"
+                            class="form-input"
+                            type="email"
+                            placeholder="nome@example.com"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea
+                            id="message"
+                            class="form-textarea"
+                            placeholder="Escreva a sua mensagem aqui..."
+                            rows="3"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span></span>Enviar Mensagem</span>
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M22 2L11 13"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M22 2L15 22L11 13L2 9L22 2Z"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </main>
 
         <rb-footer></rb-footer>
     </body>

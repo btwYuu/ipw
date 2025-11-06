@@ -254,8 +254,8 @@ class Header extends HTMLElement {
   <div class="menu-overlay"></div>
 
   <nav class="navbar">
-    <a href="./sobre.html" class="nav-btn">Sobre Nós</a>
-    <a href="./contacto.html" class="nav-btn">Contacte-nos</a>
+    <a href="./sobre.html" class="nav-btn">Sobre</a>
+    <a href="./contacto.html" class="nav-btn">Contacto</a>
   </nav>
 </header>
   `;
