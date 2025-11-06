@@ -1,32 +1,25 @@
 <!doctype html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red Bull</title>
-    <link rel="stylesheet" href="assets/styles/globals.css" />
-    <link rel="stylesheet" href="assets/styles/contacto.css" />
-  </head>
-  <script
-    src="./assets/scripts/Header.js"
-    type="text/javascript"
-    defer
-  ></script>
-  <script
-    src="./assets/scripts/Footer.js"
-    type="text/javascript"
-    defer
-  ></script>
-  <body class="container">
-    <rb-header></rb-header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Red Bull</title>
+        <link rel="stylesheet" href="assets/styles/globals.css" />
+        <link rel="stylesheet" href="assets/styles/contacto.css" />
+        <link rel="icon" href="./assets/images/favicon.png" />
+    </head>
+    <script src="./components/Header.js" type="text/javascript" defer></script>
+    <script src="./components/Footer.js" type="text/javascript" defer></script>
+    <body class="container">
+        <rb-header></rb-header>
 
-    <form class="message-form">
-      <input class="name" type="text" placeholder="Nome" />
-      <input class="email" type="email" placeholder="Email" />
-      <textarea class="mensagem" placeholder="Mensagem"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+        <form class="message-form">
+            <input class="name" type="text" placeholder="Nome" />
+            <input class="email" type="email" placeholder="Email" />
+            <textarea class="mensagem" placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
 
-    <rb-footer></rb-footer>
-  </body>
+        <rb-footer></rb-footer>
+    </body>
 </html>

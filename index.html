@@ -1,105 +1,106 @@
 <!doctype html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red Bull</title>
-    <link rel="stylesheet" href="./assets/styles/globals.css" />
-    <link rel="stylesheet" href="./assets/styles/home.css" />
-  </head>
-  <script src="./assets/scripts/main.js" async></script>
-  <script src="./assets/scripts/home.js" async></script>
-  <script src="./components/Header.js" type="text/javascript" defer></script>
-  <script src="./components/Footer.js" type="text/javascript" defer></script>
-  <body class="container">
-    <rb-header> </rb-header>
-    <main>
-      <section id="news">
-        <h1>A Big Points Haul for the Team in Austin</h1>
-        <a
-          href="https://www.redbullracing.com/int-en/united-states-grand-prix-2025-race-report"
-          alt="Imagem Notícia"
-          >Ler Mais</a
-        >
-      </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Red Bull</title>
+        <link rel="stylesheet" href="./assets/styles/globals.css" />
+        <link rel="stylesheet" href="./assets/styles/home.css" />
+        <link rel="icon" href="./assets/images/favicon.png" />
+    </head>
+    <script src="./assets/scripts/main.js" async></script>
+    <script src="./assets/scripts/home.js" async></script>
+    <script src="./components/Header.js" type="text/javascript" defer></script>
+    <script src="./components/Footer.js" type="text/javascript" defer></script>
+    <body class="container">
+        <rb-header> </rb-header>
+        <main>
+            <section id="news">
+                <h1>A Big Points Haul for the Team in Austin</h1>
+                <a
+                    href="https://www.redbullracing.com/int-en/united-states-grand-prix-2025-race-report"
+                    alt="Imagem Notícia"
+                    >Ler Mais</a
+                >
+            </section>
 
-      <section id="drivers" style="margin-top: 50px">
-        <h2>Conheça os nossos pilotos</h2>
-        <span>
-          <div
-            class="driver"
-            style="
-              background-image: url(&quot;./assets/images/max-verstappen.png&quot;);
-              background-position: center;
-              background-size: 106%;
-            "
-          >
-            <h2 class="driver-name">Max Verstappen</h2>
-            <h3 class="engineer-title">Race Engineer:</h3>
-            <h4 class="engineer-name">GianPiero Lambiase</h4>
-          </div>
+            <section id="drivers" style="margin-top: 50px">
+                <h2>Conheça os nossos pilotos</h2>
+                <span>
+                    <div
+                        class="driver"
+                        style="
+                            background-image: url(&quot;./assets/images/max-verstappen.png&quot;);
+                            background-position: center;
+                            background-size: 106%;
+                        "
+                    >
+                        <h2 class="driver-name">Max Verstappen</h2>
+                        <h3 class="engineer-title">Race Engineer:</h3>
+                        <h4 class="engineer-name">GianPiero Lambiase</h4>
+                    </div>
 
-          <div
-            class="driver"
-            style="
-              background-image: url(&quot;./assets/images/yuki-tsunoda.png&quot;);
-              background-position: center;
-              background-size: 106%;
-            "
-          >
-            <h2 class="driver-name">Yuki Tsunoda</h2>
-            <h3 class="engineer-title">Race Engineer:</h3>
-            <h4 class="engineer-name">Ernesto Desiderio</h4>
-          </div>
-        </span>
-      </section>
+                    <div
+                        class="driver"
+                        style="
+                            background-image: url(&quot;./assets/images/yuki-tsunoda.png&quot;);
+                            background-position: center;
+                            background-size: 106%;
+                        "
+                    >
+                        <h2 class="driver-name">Yuki Tsunoda</h2>
+                        <h3 class="engineer-title">Race Engineer:</h3>
+                        <h4 class="engineer-name">Ernesto Desiderio</h4>
+                    </div>
+                </span>
+            </section>
 
-      <section
-        id="events"
-        style="
-          margin-top: 8rem;
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          grid-gap: 12rem;
-          margin-inline: 4.875rem;
-        "
-      >
-        <div class="standings">
-          <h2 style="margin-bottom: 1rem; text-transform: uppercase">
-            <span id="year"></span> Driver Standings
-          </h2>
-          <table class="divide-dotted">
-            <tr>
-              <td class="driver-number">1</td>
-              <td class="driver-name-cell">Max Verstappen</td>
-              <td id="max-points" class="points-cell"></td>
-            </tr>
-            <tr>
-              <td class="driver-number">22</td>
-              <td class="driver-name-cell">Yuki Tsunoda</td>
-              <td id="yuki-points" class="points-cell"></td>
-            </tr>
-          </table>
-        </div>
-        <div class="next-event">
-          <h2 style="margin-bottom: 1rem; text-transform: uppercase">
-            <span id="event-name"></span> Grand Prix
-          </h2>
-          <h3 id="countdown-event"></h3>
-        </div>
-      </section>
+            <section
+                id="events"
+                style="
+                    margin-top: 8rem;
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    grid-gap: 12rem;
+                    margin-inline: 4.875rem;
+                "
+            >
+                <div class="standings">
+                    <h2 style="margin-bottom: 1rem; text-transform: uppercase">
+                        <span id="year"></span> Driver Standings
+                    </h2>
+                    <table class="divide-dotted">
+                        <tr>
+                            <td class="driver-number">1</td>
+                            <td class="driver-name-cell">Max Verstappen</td>
+                            <td id="max-points" class="points-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="driver-number">22</td>
+                            <td class="driver-name-cell">Yuki Tsunoda</td>
+                            <td id="yuki-points" class="points-cell"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="next-event">
+                    <h2 style="margin-bottom: 1rem; text-transform: uppercase">
+                        <span id="event-name"></span> Grand Prix
+                    </h2>
+                    <h3 id="countdown-event"></h3>
+                </div>
+            </section>
 
-      <section id="car-showcase">
-        <div class="car-container">
-          <img
-            src="./assets/images/rb21.png"
-            alt="Red Bull RB21"
-            class="car-image"
-          />
-          <h2 class="car-model">RB 21</h2>
-        </div>
-      </section>
-    </main>
-    <rb-footer></rb-footer>
-  </body>
+            <section id="car-showcase">
+                <div class="car-container">
+                    <img
+                        src="./assets/images/rb21.png"
+                        alt="Red Bull RB21"
+                        class="car-image"
+                    />
+                    <h2 class="car-model">RB 21</h2>
+                </div>
+            </section>
+        </main>
+        <rb-footer></rb-footer>
+    </body>
 </html>
