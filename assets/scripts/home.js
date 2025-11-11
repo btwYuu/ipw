@@ -9,11 +9,11 @@ const updateLocalStorage = () => {
     }),
   );
 
-  const eventDate = new Date("2025-11-09T17:00:00");
+  const eventDate = new Date("2025-11-23T04:00:00");
   localStorage.setItem(
     "nextEvent",
     JSON.stringify({
-      name: "São Paulo",
+      name: "Las Vegas",
       date: eventDate.toISOString(),
     }),
   );
