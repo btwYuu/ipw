@@ -13,70 +13,44 @@
     <body class="container">
         <rb-header></rb-header>
 
-        <main class="contact-wrapper">
+        <main class="contact-form">
             <div class="contact-container">
                 <div class="contact-header">
-                    <h1>Entre em Contacto</h1>
+                    <h1>CONTACTE-NOS</h1>
                 </div>
-
-                <form class="message-form">
-                    <div class="form-group">
+                <form class="form">
+                    <div class="forms">
                         <label for="name">Nome</label>
                         <input
                             id="name"
-                            class="form-input"
+                            class="form-name"
                             type="text"
                             placeholder="O seu nome"
                             required
                         />
                     </div>
-
-                    <div class="form-group">
+                    <div class="forms">
                         <label for="email">Email</label>
                         <input
                             id="email"
-                            class="form-input"
+                            class="form-email"
                             type="email"
-                            placeholder="nome@example.com"
+                            placeholder="nome@email.com"
                             required
                         />
                     </div>
-
-                    <div class="form-group">
+                    <div class="forms">
                         <label for="message">Mensagem</label>
                         <textarea
                             id="message"
-                            class="form-textarea"
-                            placeholder="Escreva a sua mensagem aqui..."
+                            class="form-mensagem"
                             rows="3"
+                            placeholder="Escreva a sua mensagem..."
                             required
                         ></textarea>
                     </div>
-
-                    <button type="submit" class="submit-btn">
-                        <span></span>Enviar Mensagem</span>
-                        <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M22 2L11 13"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M22 2L15 22L11 13L2 9L22 2Z"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
+                    <button type="submit" class="submit-button">
+                        <span>Enviar a Mensagem</span>
                     </button>
                 </form>
             </div>
