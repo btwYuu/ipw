@@ -7,7 +7,7 @@ const updateLocalStorage = () => {
   localStorage.setItem(
     "points",
     JSON.stringify({
-      max: 321,
+      max: 341,
       yuki: 28,
     }),
   );
