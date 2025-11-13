@@ -1,490 +1,490 @@
-/* Mobile-first styles */
+/* Estilos mobile-first */
 
-/* News Section */
+/* Secção de notícias */
 #news {
-    display: flex;
-    width: 100%;
-    height: 400px;
-    background-image: url("https://img.redbull.com/images/c_fill,g_auto,w_2200,h_1500/f_auto,q_auto/redbullcom/2025/10/20/velculovmeqqioqqk7xw/united-states-grand-prix-2025-race-report");
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    border-radius: 20px;
-    justify-content: flex-end;
-    flex-flow: column wrap;
-    padding: 1rem;
-    gap: 0.5rem;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-image: url("https://img.redbull.com/images/c_fill,g_auto,w_2200,h_1500/f_auto,q_auto/redbullcom/2025/10/20/velculovmeqqioqqk7xw/united-states-grand-prix-2025-race-report");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 20px;
+  justify-content: flex-end;
+  flex-flow: column wrap;
+  padding: 1rem;
+  gap: 0.5rem;
 }
 
 #news h1 {
-    font-size: 1.5rem;
-    line-height: 1.2;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
 
 #news a {
-    background-color: #db0a40;
-    width: 110px;
-    height: 45px;
-    border-radius: 9999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition:
-        background-color 0.3s ease,
-        transform 0.2s ease;
+  background-color: #db0a40;
+  width: 110px;
+  height: 45px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 #news a:hover {
-    background-color: #c00938;
-    transform: scale(1.05);
+  background-color: #c00938;
+  transform: scale(1.05);
 }
 
-/* Drivers Section */
+/* Secção de pilotos */
 #drivers {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 #drivers h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 #drivers *:not(h2) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 0.5rem;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 0.5rem;
+  gap: 1rem;
 }
 
 #drivers .driver {
-    position: relative;
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 350px;
-    height: 450px;
-    padding: 12px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    border-radius: 12px;
-    overflow: hidden;
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
+  padding: 12px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 #drivers .driver h2.driver-name,
 #drivers .driver h3.engineer-title,
 #drivers .driver h4.engineer-name {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  left: 0;
 }
 
 #drivers .driver h2.driver-name {
-    font-family: "BBH Sans Bogle", sans-serif;
-    bottom: 50px;
-    font-size: 1.25rem;
+  font-family: "BBH Sans Bogle", sans-serif;
+  bottom: 50px;
+  font-size: 1.25rem;
 }
 
 #drivers .driver h3.engineer-title {
-    bottom: 30px;
-    font-size: 0.9rem;
-    font-weight: normal;
+  bottom: 30px;
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 
 #drivers .driver h4.engineer-name {
-    bottom: 12px;
-    font-size: 0.85rem;
-    font-weight: lighter;
-    opacity: 0.85;
+  bottom: 12px;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  opacity: 0.85;
 }
 
-/* Car Showcase Section */
+/* Secção de apresentação do carro */
 #car-showcase {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-    padding: 0 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  padding: 0 1rem;
 }
 
 .car-container {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .car-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
-    transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
 }
 
 .car-image:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .car-model {
-    font-family: "BBH Sans Bogle", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #db0a40;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 0;
-    text-align: center;
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #db0a40;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-align: center;
 }
 
-/* Events Section */
+/* Secção de eventos */
 #events {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-inline: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-inline: 1rem;
 }
 
 .standings {
-    width: 100%;
-    background-color: #1a2e41;
-    border-radius: 0.75rem;
-    padding: 1rem;
+  width: 100%;
+  background-color: #1a2e41;
+  border-radius: 0.75rem;
+  padding: 1rem;
 }
 
 .standings h2 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .next-event {
-    width: 100%;
-    background-color: #1a2e41;
-    border-radius: 0.75rem;
-    padding: 1.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 200px;
+  width: 100%;
+  background-color: #1a2e41;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
 }
 
 .next-event h2 {
-    text-align: center;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .next-event h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 1rem;
-    color: #db0a40;
-    font-family: "BBH Sans Bogle", sans-serif;
-    letter-spacing: 0.05em;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  color: #db0a40;
+  font-family: "BBH Sans Bogle", sans-serif;
+  letter-spacing: 0.05em;
 }
 
-/* Standings Table */
+/* Tabela de classificação */
 .divide-dotted {
-    border-collapse: separate;
-    border-spacing: 0;
-    width: 100%;
-    font-size: 0.9rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 0.9rem;
 }
 
 .divide-dotted tr {
-    transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .divide-dotted tr:hover {
-    background-color: rgba(219, 10, 64, 0.1);
+  background-color: rgba(219, 10, 64, 0.1);
 }
 
 .divide-dotted td {
-    border-bottom: 2px dotted rgba(255, 255, 255, 0.2);
-    padding: 0.75rem 0.5rem;
-    vertical-align: middle;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 0.5rem;
+  vertical-align: middle;
 }
 
 .divide-dotted tr:last-child td {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .divide-dotted .driver-number {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #db0a40;
-    width: 40px;
-    text-align: center;
-    font-family: "BBH Sans Bogle", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #db0a40;
+  width: 40px;
+  text-align: center;
+  font-family: "BBH Sans Bogle", sans-serif;
 }
 
 .divide-dotted .driver-name-cell {
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding-left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
 }
 
 .divide-dotted .points-cell {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #db0a40;
-    text-align: right;
-    padding-right: 0.5rem;
-    font-family: "BBH Sans Bogle", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #db0a40;
+  text-align: right;
+  padding-right: 0.5rem;
+  font-family: "BBH Sans Bogle", sans-serif;
 }
 
-/* Tablets (600px and up) */
+/* Tablet - 600px+ */
 @media (min-width: 600px) {
-    /* News Section */
-    #news {
-        height: 550px;
-        border-radius: 25px;
-        padding: 1.5rem;
-    }
+  /* Secção de notícias */
+  #news {
+    height: 550px;
+    border-radius: 25px;
+    padding: 1.5rem;
+  }
 
-    #news h1 {
-        font-size: 2rem;
-    }
+  #news h1 {
+    font-size: 2rem;
+  }
 
-    #news a {
-        width: 125px;
-        height: 50px;
-        font-size: 1rem;
-    }
+  #news a {
+    width: 125px;
+    height: 50px;
+    font-size: 1rem;
+  }
 
-    /* Drivers Section */
-    #drivers {
-        margin-top: 3rem;
-    }
+  /* Secção de pilotos */
+  #drivers {
+    margin-top: 3rem;
+  }
 
-    #drivers .driver {
-        width: 45%;
-        max-width: 380px;
-        height: 500px;
-    }
+  #drivers .driver {
+    width: 45%;
+    max-width: 380px;
+    height: 500px;
+  }
 
-    #drivers .driver h2.driver-name {
-        bottom: 60px;
-        font-size: 1.6rem;
-    }
+  #drivers .driver h2.driver-name {
+    bottom: 60px;
+    font-size: 1.6rem;
+  }
 
-    #drivers .driver h3.engineer-title {
-        bottom: 35px;
-        font-size: 1.1rem;
-    }
+  #drivers .driver h3.engineer-title {
+    bottom: 35px;
+    font-size: 1.1rem;
+  }
 
-    #drivers .driver h4.engineer-name {
-        bottom: 15px;
-        font-size: 1rem;
-    }
+  #drivers .driver h4.engineer-name {
+    bottom: 15px;
+    font-size: 1rem;
+  }
 
-    /* Car Showcase */
-    #car-showcase {
-        margin-top: 4rem;
-        margin-bottom: 3rem;
-    }
+  /* Apresentação do carro */
+  #car-showcase {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
 
-    .car-container {
-        gap: 1.5rem;
-    }
+  .car-container {
+    gap: 1.5rem;
+  }
 
-    .car-model {
-        font-size: 3rem;
-    }
+  .car-model {
+    font-size: 3rem;
+  }
 
-    .car-image {
-        max-width: 700px;
-    }
+  .car-image {
+    max-width: 700px;
+  }
 
-    .car-image:hover {
-        transform: translateY(-8px);
-    }
+  .car-image:hover {
+    transform: translateY(-8px);
+  }
 
-    /* Events Section */
-    #events {
-        margin-top: 4rem;
-        gap: 2.5rem;
-        margin-inline: 2rem;
-    }
+  /* Secção de eventos */
+  #events {
+    margin-top: 4rem;
+    gap: 2.5rem;
+    margin-inline: 2rem;
+  }
 
-    .standings {
-        padding: 1.25rem;
-    }
+  .standings {
+    padding: 1.25rem;
+  }
 
-    .standings h2,
-    .next-event h2 {
-        font-size: 1.5rem;
-    }
+  .standings h2,
+  .next-event h2 {
+    font-size: 1.5rem;
+  }
 
-    .next-event {
-        padding: 2rem 1.5rem;
-        min-height: 250px;
-    }
+  .next-event {
+    padding: 2rem 1.5rem;
+    min-height: 250px;
+  }
 
-    .next-event h3 {
-        font-size: 2.75rem;
-        margin-top: 1.5rem;
-    }
+  .next-event h3 {
+    font-size: 2.75rem;
+    margin-top: 1.5rem;
+  }
 
-    /* Table */
-    .divide-dotted {
-        font-size: 1rem;
-    }
+  /* Tabela */
+  .divide-dotted {
+    font-size: 1rem;
+  }
 
-    .divide-dotted td {
-        padding: 0.85rem 0.6rem;
-    }
+  .divide-dotted td {
+    padding: 0.85rem 0.6rem;
+  }
 
-    .divide-dotted .driver-number {
-        font-size: 1.5rem;
-        width: 45px;
-    }
+  .divide-dotted .driver-number {
+    font-size: 1.5rem;
+    width: 45px;
+  }
 
-    .divide-dotted .driver-name-cell {
-        font-size: 1rem;
-        padding-left: 0.65rem;
-    }
+  .divide-dotted .driver-name-cell {
+    font-size: 1rem;
+    padding-left: 0.65rem;
+  }
 
-    .divide-dotted .points-cell {
-        font-size: 1.2rem;
-        padding-right: 0.65rem;
-    }
+  .divide-dotted .points-cell {
+    font-size: 1.2rem;
+    padding-right: 0.65rem;
+  }
 }
 
-/* Desktop (1024px and up) */
+/* Desktop - 1024px+ */
 @media (min-width: 1024px) {
-    /* News Section */
-    #news {
-        height: 820px;
-        border-radius: 30px;
-        padding: 24px;
-        gap: 10px;
-    }
+  /* Secção de notícias */
+  #news {
+    height: 820px;
+    border-radius: 30px;
+    padding: 24px;
+    gap: 10px;
+  }
 
-    #news h1 {
-        font-size: 3.125rem;
-    }
+  #news h1 {
+    font-size: 3.125rem;
+  }
 
-    /* Drivers Section */
-    #drivers {
-        margin-top: 50px;
-    }
+  /* Secção de pilotos */
+  #drivers {
+    margin-top: 50px;
+  }
 
-    #drivers .driver {
-        width: 392px;
-        height: 637px;
-    }
+  #drivers .driver {
+    width: 392px;
+    height: 637px;
+  }
 
-    #drivers .driver h2.driver-name {
-        font-size: 2em;
-    }
+  #drivers .driver h2.driver-name {
+    font-size: 2em;
+  }
 
-    #drivers .driver h3.engineer-title {
-        font-size: 1.4em;
-    }
+  #drivers .driver h3.engineer-title {
+    font-size: 1.4em;
+  }
 
-    #drivers .driver h4.engineer-name {
-        font-size: 1.2em;
-    }
+  #drivers .driver h4.engineer-name {
+    font-size: 1.2em;
+  }
 
-    /* Car Showcase */
-    #car-showcase {
-        margin-top: 6rem;
-        margin-bottom: 4rem;
-    }
+  /* Apresentação do carro */
+  #car-showcase {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
 
-    .car-container {
-        gap: 2rem;
-    }
+  .car-container {
+    gap: 2rem;
+  }
 
-    .car-image {
-        max-width: 900px;
-        filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
-    }
+  .car-image {
+    max-width: 900px;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+  }
 
-    .car-image:hover {
-        transform: translateY(-10px);
-    }
+  .car-image:hover {
+    transform: translateY(-10px);
+  }
 
-    .car-model {
-        font-size: 4rem;
-    }
+  .car-model {
+    font-size: 4rem;
+  }
 
-    /* Events Section */
-    #events {
-        margin-top: 8rem;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 4rem;
-        margin-inline: 4.875rem;
-    }
+  /* Secção de eventos */
+  #events {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+    margin-inline: 4.875rem;
+  }
 
-    .standings {
-        padding: 1.5rem;
-    }
+  .standings {
+    padding: 1.5rem;
+  }
 
-    .standings h2,
-    .next-event h2 {
-        font-size: 2rem;
-    }
+  .standings h2,
+  .next-event h2 {
+    font-size: 2rem;
+  }
 
-    .next-event {
-        padding: 2.5rem 2rem;
-    }
+  .next-event {
+    padding: 2.5rem 2rem;
+  }
 
-    .next-event h3 {
-        font-size: 3.5rem;
-        margin-top: 2rem;
-    }
+  .next-event h3 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
 
-    /* Table */
-    .divide-dotted {
-        font-size: 1.1rem;
-    }
+  /* Tabela */
+  .divide-dotted {
+    font-size: 1.1rem;
+  }
 
-    .divide-dotted td {
-        padding: 1rem 0.75rem;
-    }
+  .divide-dotted td {
+    padding: 1rem 0.75rem;
+  }
 
-    .divide-dotted .driver-number {
-        font-size: 1.75rem;
-        width: 50px;
-    }
+  .divide-dotted .driver-number {
+    font-size: 1.75rem;
+    width: 50px;
+  }
 
-    .divide-dotted .driver-name-cell {
-        font-size: 1.1rem;
-        padding-left: 0.75rem;
-    }
+  .divide-dotted .driver-name-cell {
+    font-size: 1.1rem;
+    padding-left: 0.75rem;
+  }
 
-    .divide-dotted .points-cell {
-        font-size: 1.35rem;
-        padding-right: 0.75rem;
-    }
+  .divide-dotted .points-cell {
+    font-size: 1.35rem;
+    padding-right: 0.75rem;
+  }
 }
 
-/* Large Desktop (1440px and up) */
+/* Large Desktop - 1440px+ */
 @media (min-width: 1440px) {
-    #events {
-        gap: 12rem;
-    }
+  #events {
+    gap: 12rem;
+  }
 }

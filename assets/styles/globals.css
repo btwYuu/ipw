@@ -1,77 +1,81 @@
+/* Importar fontes do Google */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+/* Reset global */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Estilos base do body */
 body {
-    font-family: "Open Sans", sans-serif !important;
-    text-transform: capitalize;
-    background-color: #00162b;
-    padding: 0.75rem;
-    color: #f8f8f8;
-    margin: auto;
+  font-family: "Open Sans", sans-serif !important;
+  text-transform: capitalize;
+  background-color: #00162b;
+  padding: 0.75rem;
+  color: #f8f8f8;
+  margin: auto;
 }
 
+/* Container principal */
 .container {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0.75rem;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.75rem;
 }
 
-/* Mobile-first typography */
+/* Tipografia mobile-first */
 h1 {
-    font-weight: 800;
-    font-size: 1.75rem;
+  font-weight: 800;
+  font-size: 1.75rem;
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-/* Tablets and larger */
+/* Tablet - 600px+ */
 @media (min-width: 600px) {
-    body {
-        padding: 1rem;
-    }
+  body {
+    padding: 1rem;
+  }
 
-    .container {
-        padding: 1rem;
-    }
+  .container {
+    padding: 1rem;
+  }
 
-    h1 {
-        font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    h2 {
-        font-size: 2rem;
-    }
+  h2 {
+    font-size: 2rem;
+  }
 }
 
-/* Desktop */
+/* Desktop - 1024px+ */
 @media (min-width: 1024px) {
-    body {
-        padding: 1.25rem;
-    }
+  body {
+    padding: 1.25rem;
+  }
 
-    .container {
-        padding: 1.25rem;
-    }
+  .container {
+    padding: 1.25rem;
+  }
 
-    h1 {
-        font-size: 3.125rem;
-    }
+  h1 {
+    font-size: 3.125rem;
+  }
 
-    h2 {
-        font-size: 2.5rem;
-    }
+  h2 {
+    font-size: 2.5rem;
+  }
 }

@@ -1,345 +1,345 @@
-/* Mobile-first styles */
+/* Estilos mobile-first */
 
 .redbull {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-/* Hero Section - Story */
+/* Secção principal - História */
 .story {
-    background: linear-gradient(
-        135deg,
-        rgba(219, 10, 64, 0.15) 0%,
-        rgba(13, 45, 76, 0.8) 100%
-    );
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(219, 10, 64, 0.15) 0%,
+    rgba(13, 45, 76, 0.8) 100%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .story h1 {
-    font-family: "BBH Sans Bogle", sans-serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #fff;
-    line-height: 1.2;
-    background: linear-gradient(90deg, #fff 0%, #db0a40 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #fff 0%, #db0a40 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .story p {
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.9);
-    text-transform: none;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: none;
 }
 
 .story p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-/* Mission and Values Sections */
+/* Secções de Missão e Valores */
 .mission,
 .values {
-    background-color: #1a2e41;
-    border-radius: 16px;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+  background-color: #1a2e41;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .mission:hover,
 .values:hover {
-    transform: translateY(-4px);
-    box-shadow:
-        0 8px 24px rgba(0, 0, 0, 0.3),
-        0 0 0 1px rgba(219, 10, 64, 0.2);
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(219, 10, 64, 0.2);
 }
 
 .mission h2,
 .values h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #db0a40;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #db0a40;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.75rem;
 }
 
 .mission h2::after,
 .values h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, #db0a40 0%, transparent 100%);
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #db0a40 0%, transparent 100%);
+  border-radius: 2px;
 }
 
 .mission p,
 .values p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 0.85rem;
-    color: rgba(255, 255, 255, 0.85);
-    text-transform: none;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: none;
 }
 
 .mission p:last-child,
 .values p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-/* Team Principal Section */
+/* Secção do Team Principal */
 .team_principal {
-    background: linear-gradient(135deg, #0d2d4c 0%, #1a2e41 100%);
-    border-radius: 20px;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
-    overflow: hidden;
-    position: relative;
+  background: linear-gradient(135deg, #0d2d4c 0%, #1a2e41 100%);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  position: relative;
 }
 
 .team_principal::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        circle,
-        rgba(219, 10, 64, 0.1) 0%,
-        transparent 70%
-    );
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(219, 10, 64, 0.1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
 }
 
 .team_principal h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #fff;
-    font-weight: 700;
-    z-index: 1;
-    position: relative;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  z-index: 1;
+  position: relative;
 }
 
 .img_laurent {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    border-radius: 16px;
-    box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.4),
-        0 0 0 1px rgba(255, 255, 255, 0.1);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    z-index: 1;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
 }
 
 .img_laurent:hover {
-    transform: scale(1.03) translateY(-5px);
-    box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.5),
-        0 0 0 1px rgba(219, 10, 64, 0.3);
+  transform: scale(1.03) translateY(-5px);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(219, 10, 64, 0.3);
 }
 
-/* Tablets (600px and up) */
+/* Tablet - 600px+ */
 @media (min-width: 600px) {
-    .redbull {
-        gap: 2rem;
-    }
+  .redbull {
+    gap: 2rem;
+  }
 
-    .story {
-        padding: 2rem;
-        border-radius: 24px;
-    }
+  .story {
+    padding: 2rem;
+    border-radius: 24px;
+  }
 
-    .story h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1.25rem;
-    }
+  .story h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
 
-    .story p {
-        font-size: 1.05rem;
-        margin-bottom: 1.15rem;
-    }
+  .story p {
+    font-size: 1.05rem;
+    margin-bottom: 1.15rem;
+  }
 
-    .mission,
-    .values {
-        padding: 2rem;
-        border-radius: 20px;
-    }
+  .mission,
+  .values {
+    padding: 2rem;
+    border-radius: 20px;
+  }
 
-    .mission h2,
-    .values h2 {
-        font-size: 1.75rem;
-        margin-bottom: 1.25rem;
-        padding-bottom: 0.85rem;
-    }
+  .mission h2,
+  .values h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.85rem;
+  }
 
-    .mission h2::after,
-    .values h2::after {
-        width: 80px;
-    }
+  .mission h2::after,
+  .values h2::after {
+    width: 80px;
+  }
 
-    .mission p,
-    .values p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
+  .mission p,
+  .values p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 
-    .team_principal {
-        padding: 2rem;
-        border-radius: 24px;
-    }
+  .team_principal {
+    padding: 2rem;
+    border-radius: 24px;
+  }
 
-    .team_principal h2 {
-        font-size: 1.75rem;
-        margin-bottom: 1.75rem;
-    }
+  .team_principal h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
 
-    .img_laurent {
-        max-width: 420px;
-        border-radius: 20px;
-    }
+  .img_laurent {
+    max-width: 420px;
+    border-radius: 20px;
+  }
 }
 
-/* Desktop (1024px and up) */
+/* Desktop - 1024px+ */
 @media (min-width: 1024px) {
-    .redbull {
-        gap: 2.5rem;
-        margin-bottom: 3rem;
-    }
+  .redbull {
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
 
-    .story {
-        padding: 3rem;
-        border-radius: 30px;
-    }
+  .story {
+    padding: 3rem;
+    border-radius: 30px;
+  }
 
-    .story h1 {
-        font-size: 3.5rem;
-        margin-bottom: 1.75rem;
-    }
+  .story h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.75rem;
+  }
 
-    .story p {
-        font-size: 1.15rem;
-        line-height: 1.8;
-        margin-bottom: 1.35rem;
-    }
+  .story p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 1.35rem;
+  }
 
-    .mission,
-    .values {
-        padding: 2.5rem;
-        border-radius: 24px;
-    }
+  .mission,
+  .values {
+    padding: 2.5rem;
+    border-radius: 24px;
+  }
 
-    .mission h2,
-    .values h2 {
-        font-size: 2.25rem;
-        margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
-    }
+  .mission h2,
+  .values h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
 
-    .mission h2::after,
-    .values h2::after {
-        width: 100px;
-        height: 4px;
-    }
+  .mission h2::after,
+  .values h2::after {
+    width: 100px;
+    height: 4px;
+  }
 
-    .mission p,
-    .values p {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        margin-bottom: 1.15rem;
-    }
+  .mission p,
+  .values p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.15rem;
+  }
 
-    .team_principal {
-        padding: 3rem;
-        border-radius: 30px;
-    }
+  .team_principal {
+    padding: 3rem;
+    border-radius: 30px;
+  }
 
-    .team_principal h2 {
-        font-size: 2.25rem;
-        margin-bottom: 2rem;
-    }
+  .team_principal h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
 
-    .img_laurent {
-        max-width: 500px;
-        border-radius: 24px;
-    }
+  .img_laurent {
+    max-width: 500px;
+    border-radius: 24px;
+  }
 
-    .img_laurent:hover {
-        transform: scale(1.05) translateY(-8px);
-    }
+  .img_laurent:hover {
+    transform: scale(1.05) translateY(-8px);
+  }
 }
 
-/* Large Desktop (1440px and up) */
+/* Large Desktop - 1440px+ */
 @media (min-width: 1440px) {
-    .redbull {
-        gap: 3rem;
-    }
+  .redbull {
+    gap: 3rem;
+  }
 
-    .story {
-        padding: 3.5rem;
-    }
+  .story {
+    padding: 3.5rem;
+  }
 
-    .story h1 {
-        font-size: 4rem;
-        margin-bottom: 2rem;
-    }
+  .story h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
 
-    .story p {
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
-    }
+  .story p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
 
-    .mission,
-    .values {
-        padding: 3rem;
-    }
+  .mission,
+  .values {
+    padding: 3rem;
+  }
 
-    .mission h2,
-    .values h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1.75rem;
-    }
+  .mission h2,
+  .values h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.75rem;
+  }
 
-    .mission p,
-    .values p {
-        font-size: 1.15rem;
-        margin-bottom: 1.25rem;
-    }
+  .mission p,
+  .values p {
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+  }
 
-    .team_principal {
-        padding: 3.5rem;
-    }
+  .team_principal {
+    padding: 3.5rem;
+  }
 
-    .team_principal h2 {
-        font-size: 2.5rem;
-        margin-bottom: 2.5rem;
-    }
+  .team_principal h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
 
-    .img_laurent {
-        max-width: 550px;
-    }
+  .img_laurent {
+    max-width: 550px;
+  }
 }

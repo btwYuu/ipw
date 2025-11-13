@@ -1,3 +1,4 @@
+// Componente de rodapé customizado
 class Footer extends HTMLElement {
   constructor() {
     super();
@@ -13,11 +14,12 @@ class Footer extends HTMLElement {
     text-decoration: none;
   }
 </style>
-<footer> 
+<footer>
   <p>&copy; ${new Date().getFullYear()} Red Bull Racing Ltd</p>
 </footer>
 `;
   }
 }
 
+// Registar componente customizado
 customElements.define("rb-footer", Footer);

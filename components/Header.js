@@ -1,3 +1,4 @@
+// Componente de cabeçalho customizado
 class Header extends HTMLElement {
   constructor() {
     super();
@@ -7,7 +8,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <style>
-  /* Mobile-first base styles */
+  /* Estilos base mobile-first */
   header {
     display: flex;
     justify-content: space-between;
@@ -27,7 +28,7 @@ class Header extends HTMLElement {
     height: auto;
   }
 
-  /* Hamburger menu button - mobile only */
+  /* Botão hamburger - apenas mobile */
   .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -55,6 +56,7 @@ class Header extends HTMLElement {
     transform-origin: center;
   }
 
+  /* Animação do X quando menu aberto */
   .menu-toggle.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -68,7 +70,7 @@ class Header extends HTMLElement {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* Mobile navigation - hidden by default */
+  /* Navegação mobile - oculta por defeito */
   .navbar {
     position: fixed;
     top: 0;
@@ -92,7 +94,7 @@ class Header extends HTMLElement {
     right: 0;
   }
 
-  /* Overlay for mobile menu */
+  /* Overlay escuro quando menu aberto */
   .menu-overlay {
     position: fixed;
     top: 0;
@@ -135,7 +137,7 @@ class Header extends HTMLElement {
     background: rgba(255, 255, 255, 0.1);
   }
 
-  /* Tablet styles - 768px and up */
+  /* Tablet - 768px+ */
   @media (min-width: 768px) {
     .logo img {
       width: 85px;
@@ -163,18 +165,18 @@ class Header extends HTMLElement {
     }
   }
 
-  /* Desktop styles - 1024px and up */
+  /* Desktop - 1024px+ */
   @media (min-width: 1024px) {
     .logo img {
       width: 100px;
     }
 
-    /* Hide hamburger menu */
+    /* Ocultar menu hamburger */
     .menu-toggle {
       display: none;
     }
 
-    /* Show horizontal navigation - centered */
+    /* Navegação horizontal centrada */
     .navbar {
       position: absolute;
       left: 50%;
@@ -225,7 +227,7 @@ class Header extends HTMLElement {
     }
   }
 
-  /* Large desktop - 1440px and up */
+  /* Large desktop - 1440px+ */
   @media (min-width: 1440px) {
     .nav-btn {
       padding: 10px 20px;
@@ -260,7 +262,7 @@ class Header extends HTMLElement {
 </header>
   `;
 
-    // Add event listeners after rendering
+    // Configurar event listeners após renderização
     this.setupEventListeners();
   }
 
@@ -270,7 +272,7 @@ class Header extends HTMLElement {
     const overlay = this.querySelector(".menu-overlay");
     const navLinks = this.querySelectorAll(".nav-btn");
 
-    // Toggle menu
+    // Abrir/fechar menu
     menuToggle.addEventListener("click", () => {
       this.menuOpen = !this.menuOpen;
       menuToggle.classList.toggle("active");
@@ -278,30 +280,30 @@ class Header extends HTMLElement {
       overlay.classList.toggle("active");
       menuToggle.setAttribute("aria-expanded", this.menuOpen);
 
-      // Prevent body scroll when menu is open
+      // Prevenir scroll quando menu aberto
       document.body.style.overflow = this.menuOpen ? "hidden" : "";
     });
 
-    // Close menu when clicking overlay
+    // Fechar menu ao clicar no overlay
     overlay.addEventListener("click", () => {
       this.closeMenu(menuToggle, navbar, overlay);
     });
 
-    // Close menu when clicking a nav link
+    // Fechar menu ao clicar num link
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         this.closeMenu(menuToggle, navbar, overlay);
       });
     });
 
-    // Close menu on escape key
+    // Fechar menu com tecla Escape
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && this.menuOpen) {
         this.closeMenu(menuToggle, navbar, overlay);
       }
     });
 
-    // Handle window resize
+    // Fechar menu ao redimensionar para desktop
     window.addEventListener("resize", () => {
       if (window.innerWidth >= 1024 && this.menuOpen) {
         this.closeMenu(menuToggle, navbar, overlay);
@@ -319,4 +321,5 @@ class Header extends HTMLElement {
   }
 }
 
+// Registar componente customizado
 customElements.define("rb-header", Header);
