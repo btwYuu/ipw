@@ -171,19 +171,6 @@
     border-radius: 2px;
 }
 
-.tsunoda-pit {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    aspect-ratio: 16 / 9;
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.article-hero:hover .tsunoda-pit {
-    transform: scale(1.05);
-}
-
 /* Citações */
 .quote {
     background: linear-gradient(
@@ -577,15 +564,6 @@
         height: 4px;
     }
 
-    .tsunoda-pit {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-        aspect-ratio: 16 / 9;
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
     .quote {
         padding: 2rem 2.5rem;
         font-size: 1.25rem;
@@ -708,15 +686,6 @@
 
     .article-content h2::after {
         width: 100px;
-    }
-
-    .tsunoda-pit {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-        aspect-ratio: 16 / 9;
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .quote {
