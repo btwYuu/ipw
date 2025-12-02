@@ -1,5 +1,96 @@
 /* Tipografia mobile-first */
 .contact-header {
+  display: flex;
+  justify-content: center;
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-size: 2rem;
+  background: #db0a40;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 2.5;
+}
+
+.contact-form {
+  background: #00162b;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.form {
+  background: linear-gradient(
+    135deg,
+    rgba(13, 45, 76, 0.8) 0%,
+    rgba(26, 46, 65, 0.9) 100%
+  );
+  padding: 2.5rem;
+  border-radius: 28px;
+  gap: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#name,
+#email {
+  border-radius: 0.2rem;
+  background: #1e3750;
+  font-family: "Open Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+#message {
+  border-radius: 0.2rem;
+  background: #1e3750;
+  font-family: "Open Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  resize: vertical;
+  color: white;
+  min-height: 2rem;
+  line-height: 2;
+  padding: 0.5rem 0.75rem;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#email::placeholder,
+#name::placeholder,
+#message::placeholder {
+  color: white;
+  opacity: 0.5;
+  text-transform: none;
+}
+
+.submit-button {
+  background-color: #db0a40;
+  font-family: "Open Sans", sans-serif !important;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border: 0;
+  border-radius: 0.625rem;
+  font-size: 1.312rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  align-self: center;
+  width: auto;
+}
+
+/* Tablet - 600px+ */
+@media (min-width: 600px) {
+  .contact-header {
     display: flex;
     justify-content: center;
     font-family: "BBH Sans Bogle", sans-serif;
@@ -9,30 +100,34 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 2.5;
-}
+  }
 
-.contact-form {
+  .contact-container {
+    width: 70%;
+  }
+
+  .contact-form {
     background: #00162b;
     display: flex;
     justify-content: center;
     font-weight: 600;
-}
+  }
 
-.form {
+  .form {
     background: linear-gradient(
-        135deg,
-        rgba(13, 45, 76, 0.8) 0%,
-        rgba(26, 46, 65, 0.9) 100%
+      135deg,
+      rgba(13, 45, 76, 0.8) 0%,
+      rgba(26, 46, 65, 0.9) 100%
     );
     padding: 2.5rem;
     border-radius: 28px;
     gap: 1.75rem;
     display: flex;
     flex-direction: column;
-}
+  }
 
-#name,
-#email {
+  #name,
+  #email {
     border-radius: 0.2rem;
     background: #1e3750;
     font-family: "Open Sans", sans-serif !important;
@@ -43,9 +138,9 @@
     color: white;
     height: 2.5rem;
     padding: 0.5rem 0.75rem;
-}
+  }
 
-#message {
+  #message {
     border-radius: 0.2rem;
     background: #1e3750;
     font-family: "Open Sans", sans-serif !important;
@@ -58,23 +153,23 @@
     min-height: 2rem;
     line-height: 2;
     padding: 0.5rem 0.75rem;
-}
+  }
 
-.forms {
+  .forms {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-}
+  }
 
-#email::placeholder,
-#name::placeholder,
-#message::placeholder {
+  #email::placeholder,
+  #name::placeholder,
+  #message::placeholder {
     color: white;
     opacity: 0.5;
     text-transform: none;
-}
+  }
 
-.submit-button {
+  .submit-button {
     background-color: #db0a40;
     font-family: "Open Sans", sans-serif !important;
     color: white;
@@ -86,196 +181,101 @@
     cursor: pointer;
     align-self: center;
     width: auto;
-}
-
-/* Tablet - 600px+ */
-@media (min-width: 600px) {
-    .contact-header {
-        display: flex;
-        justify-content: center;
-        font-family: "BBH Sans Bogle", sans-serif;
-        font-size: 2rem;
-        background: #db0a40;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        line-height: 2.5;
-    }
-
-    .contact-container {
-        width: 70%;
-    }
-
-    .contact-form {
-        background: #00162b;
-        display: flex;
-        justify-content: center;
-        font-weight: 600;
-    }
-
-    .form {
-        background: linear-gradient(
-            135deg,
-            rgba(13, 45, 76, 0.8) 0%,
-            rgba(26, 46, 65, 0.9) 100%
-        );
-        padding: 2.5rem;
-        border-radius: 28px;
-        gap: 1.75rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #name,
-    #email {
-        border-radius: 0.2rem;
-        background: #1e3750;
-        font-family: "Open Sans", sans-serif !important;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        border: 1.5px solid rgba(255, 255, 255, 0.15);
-        color: white;
-        height: 2.5rem;
-        padding: 0.5rem 0.75rem;
-    }
-
-    #message {
-        border-radius: 0.2rem;
-        background: #1e3750;
-        font-family: "Open Sans", sans-serif !important;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        border: 1.5px solid rgba(255, 255, 255, 0.15);
-        resize: vertical;
-        color: white;
-        min-height: 2rem;
-        line-height: 2;
-        padding: 0.5rem 0.75rem;
-    }
-
-    .forms {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    #email::placeholder,
-    #name::placeholder,
-    #message::placeholder {
-        color: white;
-        opacity: 0.5;
-        text-transform: none;
-    }
-
-    .submit-button {
-        background-color: #db0a40;
-        font-family: "Open Sans", sans-serif !important;
-        color: white;
-        padding: 0.8rem 1.4rem;
-        border: 0;
-        border-radius: 0.625rem;
-        font-size: 1.312rem;
-        box-sizing: border-box;
-        cursor: pointer;
-        align-self: center;
-        width: auto;
-    }
+  }
 }
 
 /* Desktop - 1024px+ */
 @media (min-width: 1024px) {
-    .contact-header {
-        display: flex;
-        justify-content: center;
-        font-family: "BBH Sans Bogle", sans-serif;
-        font-size: 2rem;
-        background: #db0a40;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        line-height: 2.5;
-    }
+  .contact-header {
+    display: flex;
+    justify-content: center;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-size: 2rem;
+    background: #db0a40;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 2.5;
+  }
 
-    .contact-container {
-        width: 50%;
-    }
+  .contact-container {
+    width: 50%;
+  }
 
-    .contact-form {
-        background: #00162b;
-        display: flex;
-        justify-content: center;
-        font-weight: 600;
-    }
+  .contact-form {
+    background: #00162b;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+  }
 
-    .form {
-        background: linear-gradient(
-            135deg,
-            rgba(13, 45, 76, 0.8) 0%,
-            rgba(26, 46, 65, 0.9) 100%
-        );
-        padding: 2.5rem;
-        border-radius: 28px;
-        gap: 1.75rem;
-        display: flex;
-        flex-direction: column;
-    }
+  .form {
+    background: linear-gradient(
+      135deg,
+      rgba(13, 45, 76, 0.8) 0%,
+      rgba(26, 46, 65, 0.9) 100%
+    );
+    padding: 2.5rem;
+    border-radius: 28px;
+    gap: 1.75rem;
+    display: flex;
+    flex-direction: column;
+  }
 
-    #name,
-    #email {
-        border-radius: 0.2rem;
-        background: #1e3750;
-        font-family: "Open Sans", sans-serif !important;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        border: 1.5px solid rgba(255, 255, 255, 0.15);
-        color: white;
-        height: 2.5rem;
-        padding: 0.5rem 0.75rem;
-    }
+  #name,
+  #email {
+    border-radius: 0.2rem;
+    background: #1e3750;
+    font-family: "Open Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+  }
 
-    #message {
-        border-radius: 0.2rem;
-        background: #1e3750;
-        font-family: "Open Sans", sans-serif !important;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        border: 1.5px solid rgba(255, 255, 255, 0.15);
-        resize: vertical;
-        color: white;
-        min-height: 2rem;
-        line-height: 2;
-        padding: 0.5rem 0.75rem;
-    }
+  #message {
+    border-radius: 0.2rem;
+    background: #1e3750;
+    font-family: "Open Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    resize: vertical;
+    color: white;
+    min-height: 2rem;
+    line-height: 2;
+    padding: 0.5rem 0.75rem;
+  }
 
-    .forms {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  .forms {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    #email::placeholder,
-    #name::placeholder,
-    #message::placeholder {
-        color: white;
-        opacity: 0.5;
-        text-transform: none;
-    }
+  #email::placeholder,
+  #name::placeholder,
+  #message::placeholder {
+    color: white;
+    opacity: 0.5;
+    text-transform: none;
+  }
 
-    .submit-button {
-        background-color: #db0a40;
-        font-family: "Open Sans", sans-serif !important;
-        color: white;
-        padding: 1.6rem 2rem;
-        border: 0;
-        border-radius: 0.625rem;
-        font-size: 1.312rem;
-        box-sizing: border-box;
-        cursor: pointer;
-        align-self: center;
-        width: auto;
-    }
+  .submit-button {
+    background-color: #db0a40;
+    font-family: "Open Sans", sans-serif !important;
+    color: white;
+    padding: 1.6rem 2rem;
+    border: 0;
+    border-radius: 0.625rem;
+    font-size: 1.312rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-self: center;
+    width: auto;
+  }
 }
