@@ -45,7 +45,7 @@
         }:
         with lib;
         let
-          cfg = config.services.diogocastro-website;
+          cfg = config.services.ipw-rb-website;
         in
         {
           options.services.ipw-rb-website = {
