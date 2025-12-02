@@ -1,40 +1,79 @@
-// Obter pontos do localStorage
-const points = localStorage.getItem("points");
+// Fetch e armazenar as classificação dos pilotos
+const fetchDriverStandings = async () => {
+  try {
+    const response = await fetch('https://api.jolpi.ca/ergast/f1/current/driverStandings.json');
+    const data = await response.json();
+    const standings = data.MRData.StandingsTable.StandingsLists[0].DriverStandings;
 
-// Atualizar localStorage com dados dos pilotos e próximo evento
-const updateLocalStorage = () => {
-  // Pontos dos pilotos
-  localStorage.setItem(
-    "points",
-    JSON.stringify({
-      max: 341,
-      yuki: 28,
-    }),
-  );
+    const maxStanding = standings.find(driver => driver.Driver.driverId === 'max_verstappen');
+    const yukiStanding = standings.find(driver => driver.Driver.driverId === 'tsunoda');
 
-  // Próximo evento
-  const eventDate = new Date("2025-11-23T04:00:00");
-  localStorage.setItem(
-    "nextEvent",
-    JSON.stringify({
-      name: "Las Vegas",
-      date: eventDate.toISOString(),
-    }),
-  );
+    const points = {
+      max: maxStanding ? parseInt(maxStanding.points) : 0,
+      yuki: yukiStanding ? parseInt(yukiStanding.points) : 0,
+    };
+
+    localStorage.setItem("points", JSON.stringify(points));
+    return points;
+  } catch (error) {
+    console.error('Error fetching driver standings:', error);
+    const stored = localStorage.getItem("points");
+    return stored ? JSON.parse(stored) : { max: 341, yuki: 28 };
+  }
 };
 
-updateLocalStorage();
+// Fetch e armazenar a próxima corrida
+const fetchNextRace = async () => {
+  try {
+    const response = await fetch('https://api.jolpi.ca/ergast/f1/current/next.json');
+    const data = await response.json();
+    const race = data.MRData.RaceTable.Races[0];
 
-// Exibir pontos dos pilotos
-const maxPoints = (document.getElementById("max-points").textContent =
-  `${JSON.parse(localStorage.getItem("points")).max}`);
-const yukiPoints = (document.getElementById("yuki-points").textContent =
-  `${JSON.parse(localStorage.getItem("points")).yuki}`);
+    const eventDate = new Date(`${race.date}T${race.time || '00:00:00'}`);
+    const nextEvent = {
+      name: race.raceName.replace(' Grand Prix', ''),
+      date: eventDate.toISOString(),
+    };
 
-// Exibir nome do próximo evento
-const eventName = document.getElementById("event-name");
-const nextEvent = JSON.parse(localStorage.getItem("nextEvent"));
-eventName.textContent = nextEvent.name;
+    localStorage.setItem("nextEvent", JSON.stringify(nextEvent));
+    return nextEvent;
+  } catch (error) {
+    console.error('Error fetching next race:', error);
+    const stored = localStorage.getItem("nextEvent");
+    return stored ? JSON.parse(stored) : {
+      name: 'Las Vegas',
+      date: new Date("2025-11-23T04:00:00").toISOString()
+    };
+  }
+};
+
+// Carregar e exibir os dados na página
+const loadDriverStandings = async () => {
+  const cached = localStorage.getItem("points");
+  if (cached) {
+    const points = JSON.parse(cached);
+    document.getElementById("max-points").textContent = points.max;
+    document.getElementById("yuki-points").textContent = points.yuki;
+  }
+
+  const points = await fetchDriverStandings();
+  document.getElementById("max-points").textContent = points.max;
+  document.getElementById("yuki-points").textContent = points.yuki;
+};
+
+const loadNextRace = async () => {
+  const cached = localStorage.getItem("nextEvent");
+  if (cached) {
+    const nextEvent = JSON.parse(cached);
+    document.getElementById("event-name").textContent = nextEvent.name;
+  }
+
+  const nextEvent = await fetchNextRace();
+  document.getElementById("event-name").textContent = nextEvent.name;
+};
+
+loadDriverStandings();
+loadNextRace();
 
 // Contagem regressiva para o próximo evento
 const countdownElement = document.getElementById("countdown-event");
