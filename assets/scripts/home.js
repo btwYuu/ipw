@@ -109,3 +109,10 @@ const updateCountdown = () => {
 // Atualizar a cada segundo
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+// Flip card
+document.querySelectorAll(".driver").forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+  });
+});
